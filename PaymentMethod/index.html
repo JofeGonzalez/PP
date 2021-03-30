@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap" rel="stylesheet">
+    <title>Payment Method</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>3. Payment method</h1>            
+        </div>
+        <div class="payforms">
+            <div class="pay">
+                <input type="checkbox" id="PayPal">
+                <label for="Paypal">On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralizec by the charms of pleasure of the moment, so blinded by desire, that they cannot foresse the pain and trouble.</label>
+            </div>
+            <div class="pay">
+                <input type="checkbox" id="Card">
+                <label for="Card">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</label>                
+            </div>
+        </div>
+        <div class="card-form">
+            <form action="POST">
+                <div class="input-card">
+                    <div class="input-box">
+                        <input type="number" placeholder="**** **** **** ****" required class="cardnumber"
+                        maxlength="16">
+                    </div>
+                    <div class="input-box">
+                        <div class="date">
+                            <select name="months" id="months">
+                                <option value="">01</option>
+                                <option value="">02</option>
+                                <option value="">03</option>
+                                <option value="">04</option>
+                                <option value="">05</option>
+                                <option value="">06</option>
+                                <option value="">07</option>
+                                <option value="">08</option>
+                                <option value="">09</option>
+                                <option value="">10</option>
+                                <option value="">11</option>
+                                <option value="">12</option>
+                            </select>
+                        </div>
+                        <div class="input-box">
+                            <select name="years" id="years">
+                                <option value="">21</option>
+                                <option value="">22</option>
+                                <option value="">23</option>
+                                <option value="">24</option>
+                                <option value="">25</option>
+                                <option value="">26</option>
+                                <option value="">27</option>
+                                <option value="">28</option>
+                                <option value="">29</option>
+                                <option value="">30</option>
+                                <option value="">31</option>
+                                <option value="">32</option>
+                                <option value="">33</option>
+                                <option value="">34</option>
+                                <option value="">35</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="input-box">
+                        <input type="number">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
