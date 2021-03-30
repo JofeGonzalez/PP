@@ -1,0 +1,84 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    background-color: #ffffff;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    position: relative;
+    top: 100px;
+    width: 570px;
+    height: 670px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.container .title{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #eee;
+    height: 100px;
+}
+
+.title h1{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    color: #666666;
+    letter-spacing: 0;
+    background-color: #eee;
+    border-radius: 8px;
+    top: 35px;
+    left: 10px;
+}
+i{
+    margin-left: 480px;
+}
+.payforms{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    margin-left: 25px;
+    margin-right: 155px;
+    margin-bottom: 30px;
+}
+
+.pay{    
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bold;
+    color: #666666;
+    margin-top: 20px;
+}
+
+
+p{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 12px;
+    color: #666666;
+    letter-spacing: 0;
+    font-weight: regular;
+    margin-top: -40px;
+}
+
+.pay{
+    margin-bottom: 25px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    margin: 0%;
+}
