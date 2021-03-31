@@ -19,19 +19,22 @@
         <div class="payforms">
             <div class="pay">
                 <input type="checkbox" id="PayPal">
-                <label for="Paypal">On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralizec by the charms of pleasure of the moment, so blinded by desire, that they cannot foresse the pain and trouble.</label>
+                <label for="PayPal">PayPal</label>
+
             </div>
+                <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralizec by the charms of pleasure of the moment, so blinded by desire, that they cannot foresse the pain and trouble.</p>
             <div class="pay">
                 <input type="checkbox" id="Card">
-                <label for="Card">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</label>                
+                <label for="Card">Credit Card</label>
+
             </div>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
         </div>
         <div class="card-form">
             <form action="POST">
                 <div class="input-card">
                     <div class="input-box">
-                        <input type="number" placeholder="**** **** **** ****" required class="cardnumber"
-                        maxlength="16">
+                        <input type="number" placeholder="**** **** **** ****" required class="cardnumber">
                     </div>
                     <div class="input-box">
                         <div class="date">
@@ -71,8 +74,13 @@
                         </div>
                     </div>
                     <div class="input-box">
-                        <input type="number">
+                        <input type="number" required placeholder="cvv/cvc" class="cvc">
                     </div>
+                    <div class="input-box">
+                        <input type="text" required placeholder="cardholder name" class="cardholder-name">
+                    </div>
+                    <input type="submit" value="submit">
+                    <input type="button" value="back">                
                 </div>
             </form>
         </div>
