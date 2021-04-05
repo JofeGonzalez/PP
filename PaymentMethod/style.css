@@ -1,0 +1,216 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  background-color: #ffffff;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  position: relative;
+  top: 60px;
+  width: 570px;
+  height: 630px;
+  background-color: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.container .title {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #eee;
+  height: 100px;
+}
+
+.title h1 {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  color: #666666;
+  letter-spacing: 0;
+  background-color: #eee;
+  border-radius: 8px;
+  top: 35px;
+  left: 30px;
+}
+i {
+  margin-left: 480px;
+}
+.payforms {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  margin-left: 45px;
+  margin-right: 155px;
+  margin-bottom: 30px;
+}
+
+.pay {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: bold;
+  color: #666666;
+  margin-top: 20px;
+}
+
+p {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 12px;
+  color: #666666;
+  letter-spacing: 0;
+  font-weight: regular;
+  margin-top: -45px;
+}
+
+.pay {
+  margin-bottom: 25px;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+label {
+  position: relative;
+}
+
+label::before {
+  content: "";
+  background: url(/PaymentMethod/images/group-50.svg);
+  background-position: center;
+  background-size: contain;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: -26px;
+  top: 4px;
+  transform: scale(0) rotateZ(180deg);
+  transition: all 0.4s cubic-bezier(0.54, 0.01, 0, 1.49);
+}
+
+input[type="checkbox"]:checked + label::before {
+  transform: scale(1) rotateZ(0deg);
+}
+
+label::after {
+  content: "";
+  border: 2px solid rgb(243, 241, 241);
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: -27.7px;
+  top: 2.4px;
+  border-radius: 50%;
+}
+
+input,
+select {
+  border-radius: 4px;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 14px;
+  font-weight: Regular;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  border: 2px solid rgb(236, 236, 236);
+  outline-color: rgb(151, 194, 229);
+}
+
+.card-form {
+  margin-left: 15px;
+}
+
+form {
+  width: 100%;
+  margin: 0 auto;
+  color: #9b9a9a;
+}
+
+input {
+  width: 100%;
+  padding: 0.6rem;
+  color: #9b9a9a;
+}
+
+.cvc-box {
+  margin-top: -63px;
+  margin-left: 230px;
+  width: 55%;
+}
+
+.cardnumber {
+  width: 96%;
+}
+
+select {
+  padding: 0.6rem;
+  color: #9b9a9a;
+}
+
+#months {
+  width: 18%;
+}
+
+#years {
+  margin-left: 11px;
+  width: 18%;
+}
+
+.cardholder-name {
+  width: 96%;
+}
+
+.btnes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 14px;
+}
+
+.btnsubmit{
+    text-transform: initial;
+    width: 100%;
+    margin-left: 245px;
+    margin-right: 20px;
+    background-color: rgb(151, 194, 229);
+    color: #fff;
+    border-radius: 6px;
+}  
+
+.btnback{
+    text-transform: initial;
+    width: 100%;
+    border: 2.5px solid #9b9a9a;
+    border-radius: 6px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0%;
+}
+
+::placeholder{
+    color: #9b9a9a;
+}
+
+img{
+    margin-left: 420px;
+    margin-top: -40px;
+    width: 30%;
+}
+
+.pay img{
+    width: 14%;
+}
