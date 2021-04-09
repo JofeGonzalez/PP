@@ -1,0 +1,58 @@
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(14, 14, 97);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.item{
+    width: 20px;
+    height: 20px;
+    background-color: yellow;
+    margin: 12px;
+    border-radius: 50%;
+    background-image: linear-gradient(145deg, rgba(255,255,255,0.6), 
+    rgba(0,0,0,0));
+    animation: scaleAnimation 1s linear infinite;
+}
+
+@keyframes scaleAnimation{
+    0%, 50%, 100%{
+        transform: scale(1);
+    }
+
+    25%{
+        transform: scale(0.6);
+    }
+
+    75%{
+        transform: scale(1.1);
+    }
+}
+
+.red{
+    background-color: red;
+    animation-delay: 0.1s;
+}
+
+.blue{
+    background-color: blue;
+    animation-delay: 0.2s;
+}
+
+.green{
+    background-color: green;
+    animation-delay: 0.3s;
+}

@@ -1,0 +1,197 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "New Tegomin", sans-serif;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, black, grey);
+    background-size: cover;
+    background-image: url(/CharactersCards/images/fondo.jpg);
+    color: white;
+    font-size: 14px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    position: relative;
+    width: 270px;
+    margin: 2em;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 180px 1fr auto;
+    box-shadow: 0 15px 30px -10px black;
+}
+
+.card-body, .card-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-image{
+    position: relative;
+    background-color: rgb(30, 83, 30);
+    border-top-left-radius: 18px;
+    border-top-right-radius: 28px;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(/CharactersCards/images/fondoV.jpg);
+    background-size: cover;
+}
+
+.card-image img{
+    max-width: 95%;
+    max-height: 95%;
+    transition: max-width 0.4s, max-height 0.4s;
+}
+
+.card:hover .card-image img{
+    max-width: 120%;
+    max-height: 120%;
+}
+
+.card:hover{
+    box-shadow: 4px 4px 25px rgba(0, 0, 0, 0.2);
+}
+
+.card:nth-child(2) .card-image{    
+    background: url(/CharactersCards/images/FondoC.jpg);
+}
+
+.card:nth-child(3) .card-image{
+    background: url(/CharactersCards/images/FondoB.jpg);
+}
+
+.card-body{
+    background: #fff;
+    color: black;
+    padding: 20px 28px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.card-body .type{
+    font-weight: bold;
+}
+
+.card-body h2{
+    font-family: 'Londrina Solid', cursive;
+    font-size: 2.2em;
+    margin: 6px auto 12px;
+}
+
+.card-body p{
+    color: gray;
+    font-size: 1.1em;
+    line-height: 20px;
+}
+
+.card-footer{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+}
+
+.card-footer .info{
+    font-size: 1em;
+    padding: 10px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.card-footer .info:last-child{
+    border: none;
+}
+
+.card-footer .info .type{
+    text-transform: uppercase;
+    margin-top: 2px;
+    font-size: 0.9em;
+}
+
+.card:nth-child(1) .card-footer{
+    background: rgba(22, 82, 14, 0.534);
+}
+.card:nth-child(2) .card-footer{
+    background: rgba(138, 25, 25, 0.534);
+}
+.card:nth-child(3) .card-footer{
+    background: rgba(55, 56, 138, 0.534);
+}
+
+.card:nth-child(1) .card-body span{
+    color: rgb(22, 82, 14);
+}
+.card:nth-child(2) .card-body span{
+    color: rgb(138, 25, 25)
+}
+.card:nth-child(3) .card-body span{
+    color: rgb(55, 56, 138);
+}
+
+.selector{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.card:hover .selector{
+    opacity: 1;
+}
+
+.selector button{
+    background-color: rgba(22, 82, 14, 0.8);
+    color: #fff;
+    outline: none;
+    border: 2px solid currentColor;
+    cursor: pointer; 
+    padding: 12px 20px;
+    transform: translateY(60px);
+    border-radius: 50px;
+    letter-spacing: 2px;
+    font-size: 1.3em;
+    font-weight: bolder;
+    transition: opacity 0.3s;
+}
+
+.selector button:hover{
+    opacity: 0.8s;
+}
+
+.card:nth-child(2) .selector button{
+    background-color: rgba(138, 25, 25, 0.8);
+}
+.card:nth-child(3) .selector button{
+    background-color:rgba(55, 56, 138, 0.8);
+}
