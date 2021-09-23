@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Koh+Santepheap:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <button class="openform" onclick="openForm()"><i class="fas fa-arrow-down"></i></button>
+    <div class="container-form" id="containerform">
+      <div class="form-buttons">
+        <button class="closeform" onclick="closeForm()"><i class="far fa-times-circle"></i></button>
+      </div>
+      <div class="input-forms">
+        <input type="text" id="name" placeholder="Inserte su nombre" />
+        <input type="text" id="lastname" placeholder="Inserte su apellido" />
+        <button id="save" onclick="guardarContacto()" class="save">
+          <i class="fas fa-id-card"></i> Save Contact
+        </button>
+      </div>
+    </div>
+    <div class="container-table">
+      <table class="contacts-table">
+        <thead id = "head">
+          <tr>            
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Accion</th>
+          </tr>
+        </thead>
+        <tbody id="body"></tbody>
+      </table>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
