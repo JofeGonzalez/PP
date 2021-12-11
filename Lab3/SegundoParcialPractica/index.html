@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/Lab3/SegundoParcialPractica/css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Koh+Santepheap:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Segundo Parcial</title>
+  </head>
+  <body>
+    <div class="div-principal">
+      <div class="titulo">
+        <h1>ABM Personas</h1>
+      </div>
+      <div class="abm">
+        <div class="inpts">
+          <label for="IdCliente">Id: </label>
+          <input type="text" name="IdCliente" id="IdCliente" disabled />
+          <label for="NombreCliente">Nombre: </label>
+          <input type="text" name="NombreCliente" id="NombreCliente" />
+          <label for="ApellidoCliente">Apellido: </label>
+          <input type="text" name="ApellidoCliente" id="ApellidoCliente" />
+          <label for="EdadCliente">Edad: </label>
+          <input type="number" name="EdadCliente" id="EdadCliente" />
+          <label for="SexoCliente">Sexo: </label>
+          <select name="SexoCliente" id="SexoCliente">
+            <option value="Male">Masculino</option>
+            <option value="Female">Femenino</option>
+          </select>
+        </div>
+        <div class="btnsABM">
+          <div class="derecha">
+            <button class="Add" id="Add">Agregar</button>
+            <button class="Delete" id="Delete">Eliminar</button>
+          </div>
+          <div class="izquierda">
+            <button class="Clean" id="Clean">Limpiar LocalStorage</button>
+          </div>
+        </div>
+      </div>
+      <div class="titulo">
+        <h1>Filtros</h1>
+      </div>
+      <div class="filtros">
+        <label for="SexoClienteFiltro">Filtrar Por: </label>
+        <select name="SexoClienteFiltro" id="SexoClienteFiltro">
+          <option value="Male">Masculino</option>
+          <option value="Female">Femenino</option>
+        </select>
+        <label for="Prom">Promedio de Edad: </label>
+        <input type="text" name="Prom" id="Prom" disabled />
+        <button class="calc" id="calc">Calcular Promedio</button>
+      </div>
+      <div class="campos">
+        <p>Campos Mostrados <span>Tildar los campos a mostrar</span></p>
+        <input
+          type="checkbox"
+          checked="true"
+          onchange="App.showFields(0)"
+          name="Id"
+          id="Id"
+        />
+        Id
+        <input
+          type="checkbox"
+          checked="true"
+          onchange="App.showFields(1)"
+          name="Nombre"
+          id="Nombre"
+        />
+        Nombre
+        <input
+          type="checkbox"
+          checked="true"
+          onchange="App.showFields(2)"
+          name="Apellido"
+          id="Apellido"
+        />
+        Apellido
+        <input
+          type="checkbox"
+          checked="true"
+          onchange="App.showFields(3)"
+          name="Sexo"
+          id="Sexo"
+        />
+        Sexo
+        <input
+          type="checkbox"
+          checked="true"
+          onchange="App.showFields(4)"
+          name="Edad"
+          id="Edad"
+        />
+        Edad
+      </div>
+      <div class="tabla">
+        <div class="titulo">
+          <h1>Lista de Personas</h1>
+        </div>
+        <table id="table" class="table">
+          <thead>
+            <tr>
+              <th id="IdField">Id</th>
+              <th id="NombreField">Nombre</th>
+              <th id="ApellidoField">Apellido</th>
+              <th id="SexoField">Sexo</th>
+              <th id="EdadField">Edad</th>
+            </tr>
+          </thead>
+          <tbody id="tableBody"></tbody>
+        </table>
+      </div>
+    </div>
+    <script src="/Lab3/SegundoParcialPractica/js/js.js"></script>
+  </body>
+</html>

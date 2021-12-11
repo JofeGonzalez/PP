@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="/Lab3/ParcialPracticaRecuperatorio/css/style.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Koh+Santepheap:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>EjercicioLabo3JoseGonzalez</title>
+  </head>
+  <body>
+    <div class="container-form" id="containerForm">
+      <div class="form-button">
+        <button class="closeform" onclick="closeForm()">
+          <i class="far fa-times-circle"></i>
+        </button>
+      </div>
+      <div class="inpts">
+        <input type="text" id="name" placeholder="Nombre..." />
+        <input type="text" id="lastname" placeholder="Apellido..." />
+        <select name="localidades" id="localidades"></select>
+      </div>
+      <div class="radios">
+        <label for="MaleCB">
+          <input type="radio" name="MaleCB" id="MaleCB" />
+          Masculino
+        </label>
+        <label for="FemaleCB">
+          <input type="radio" name="FemaleCB" id="FemaleCB" />
+          Femenino
+        </label>
+      </div>
+      <div class="btones">
+        <button id="modify" class="btn">
+          <i class="far fa-save"></i> Modificar
+        </button>
+      </div>
+    </div>
+    <div class="container-table" id="containerTable">
+      <table id="table" class="contacts-table">
+        <thead onclick="openForm()">
+          <tr>
+            <th>Id</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Localidad</th>
+            <th>Sexo</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+      </table>
+    </div>
+  </div>
+  <div id="spinner">
+    <div class="sk-chase">
+      <div class="sk-chase-dot"></div>
+      <div class="sk-chase-dot"></div>
+      <div class="sk-chase-dot"></div>
+      <div class="sk-chase-dot"></div>
+      <div class="sk-chase-dot"></div>
+      <div class="sk-chase-dot"></div>
+    </div>
+    <script src="/Lab3/ParcialPracticaRecuperatorio/js/func.js"></script>
+    <script src="/Lab3/ParcialPracticaRecuperatorio/js/apis.js"></script>
+    <script src="/Lab3/ParcialPracticaRecuperatorio/js/main.js"></script>
+  </body>
+</html>
